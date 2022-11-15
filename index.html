@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Co-Farm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <a id="title" href="#mission">
+        <img id="logo" src="images/logo.svg">
+        <h1>Co-Farm</h1>
+      </a>
+      <div id="menu-icon">
+        <img src="images/burger-bar.png">
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="#mission">Our Mission</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="mission">
+        <div id="mission-text">
+          <h2>Introducing Co-Farm</h2>
+          <p>Providing you with flexible solutions for all your land rental needs</p>
+        </div>
+      </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <ul>
+          <li id="festivals"><h3>Festivals</h3></li>
+          <li id="farming"><h3>Farming</h3></li>
+          <li id="camping"><h3>Camping</h3></li>
+          <li id="sports"><h3>Sports Events</h3></li>
+        </ul>
+        <p>Here are just some examples of how others have made used our services.</p>
+      </section>
+      <section id="staff">
+        <h2>Staff</h2>
+        <ul>
+          <li>
+            <figure>
+              <img src="images/headshot1.jpeg">
+              <figcaption>
+                <h3>Brad Bumble</h3>
+                <p>CEO</p>
+                <p></p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="images/headshot2.jpeg">
+              <figcaption>
+                <h3>Jen Jupiter</h3>
+                <p>Head of Marketing</p>
+                <p></p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="images/headshot3.jpeg">
+              <figcaption>
+                <h3>Chris Carpenter</h3>
+                <p>Head of Logistics</p>
+                <p></p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <p>Meet our team.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>hello@cofarms.co.uk</p>
+      </section>
+    </main>
+    <footer></footer>
+    <script>
+      document.getElementById("menu-icon").addEventListener("click", function(){
+        console.log("blah");
+        menu = document.getElementById("menu");
+        console.log(menu.style.display);
+        if (menu.style.display == "")
+          menu.style.display="block";
+        else
+          menu.style.display="";
+      }, false);
+    </script>
+  </body>
+</html>
