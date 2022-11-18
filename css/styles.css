@@ -60,17 +60,17 @@ p {
   text-align:center;
 }
 
-header nav {
+#menu {
   height: 2.5rem;
 }
 
-header nav ul {
+#menu ul {
   display: flex;
   height: 100%;
   align-items: center;
 }
 
-header nav li {
+#menu li {
   margin-left: 1rem;
   vertical-align:middle;
   font-weight:500;
@@ -91,7 +91,7 @@ header nav li {
     height: 100%;
   }
 
-  header nav {
+  #menu {
     display:none;
     margin-top:0.625rem;
     padding-top:0.625rem;
@@ -99,13 +99,13 @@ header nav li {
     height: auto;
   }
   
-  header nav ul {
+  #menu ul {
     display: flex;
     flex-direction: column;
     width: calc(100vw - 1.25rem);
   }
 
-  header nav li {
+  #menu li {
     margin-left: 0;
   }
 }
