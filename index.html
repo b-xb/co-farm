@@ -89,10 +89,18 @@
       const header = document.getElementsByTagName("header")[0];
       const menuIcon = document.getElementById("menu-icon");
       const menu = document.getElementById("menu");
+      const menuItems = document.getElementsByTagName("a");
 
       menuIcon.addEventListener("click", () => {
         menu.classList.toggle("show-on-mobile");
       }, false);
+
+
+      for (menuItem of menuItems) {
+        menuItem.addEventListener("click", () => {
+          menu.classList.remove("show-on-mobile");
+        }, false);
+      }
 
       header.addEventListener("mouseleave", () => {
         menu.classList.remove("show-on-mobile");
