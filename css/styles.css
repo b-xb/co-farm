@@ -108,6 +108,10 @@ p {
   #menu li {
     margin-left: 0;
   }
+
+  #menu.show-on-mobile {
+    display: block;
+  }
 }
 
 main {

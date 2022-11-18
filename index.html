@@ -86,14 +86,22 @@
     </main>
     <footer></footer>
     <script>
-      document.getElementById("menu-icon").addEventListener("click", function(){
-        console.log("blah");
-        menu = document.getElementById("menu");
-        console.log(menu.style.display);
-        if (menu.style.display == "")
-          menu.style.display="block";
-        else
-          menu.style.display="";
+      const header = document.getElementsByTagName("header")[0];
+      const menuIcon = document.getElementById("menu-icon");
+      const menu = document.getElementById("menu");
+
+      menuIcon.addEventListener("click", () => {
+        menu.classList.toggle("show-on-mobile");
+      }, false);
+
+      header.addEventListener("mouseleave", () => {
+        menu.classList.remove("show-on-mobile");
+      }, false);
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 700) {
+          menu.classList.remove("show-on-mobile");
+        }
       }, false);
     </script>
   </body>
