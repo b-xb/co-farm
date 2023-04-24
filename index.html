@@ -116,11 +116,8 @@
       var observer = new IntersectionObserver(function(entries) {
         for (entry of entries) {
           if(entry.isIntersecting === true) {
-            //console.log('Element is fully visible in screen');
             entry.target.classList.remove("hide-image");
           } else {
-            //console.log('Element is not fully visible in screen');
-            //console.log(entry);
             entry.target.classList.add("hide-image");
           }
         }
@@ -131,10 +128,6 @@
         console.log(element);
       });
 
-      document.querySelectorAll("#staff img").forEach(function (element) {
-        observer.observe(element);
-        console.log(element);
-      });
     </script>
   </body>
 </html>
