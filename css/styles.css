@@ -280,6 +280,7 @@ main section {
   height: auto;
   max-height: 30vh;
   max-width: 80%;
+  border-radius: 50%;
 }
 
 #staff figcaption p {
@@ -307,6 +308,7 @@ main section {
     max-width: 50%;
     width: auto;
     height: auto;
+    border-radius: 0px;
   }
 
   #staff figcaption{
